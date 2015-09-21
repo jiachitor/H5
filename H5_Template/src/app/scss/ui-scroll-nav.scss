@@ -1,0 +1,135 @@
+#scrollNavWrapper {
+	position: relative;
+	z-index: 1;
+	height: 40px;
+	width: 100%;
+	background: #fff;
+	overflow: hidden;
+	-ms-touch-action: none;
+
+	#scroller {
+		position: absolute;
+		z-index: 1;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		width: 800px;
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		text-size-adjust: none;
+	}
+
+	#scroller ul {
+		list-style: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	#scroller li {
+		float: left;
+		padding: 0 20px;
+		line-height: 40px;
+		background-color: #fff;
+		font-size: 14px;
+		overflow: hidden;
+		text-align: center;
+	}
+}
+
+
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+//
+	#wrapper {
+		position: relative;
+		z-index: 1;
+		height: 160px;
+		width: 100%;
+		background: #ccc;
+		overflow: hidden;
+		-ms-touch-action: none;
+	}
+
+	#scroller {
+		position: absolute;
+		z-index: 1;
+		-webkit-tap-highlight-color: rgba(0,0,0,0);
+		width: 2400px;
+		height: 160px;
+		-webkit-transform: translateZ(0);
+		-moz-transform: translateZ(0);
+		-ms-transform: translateZ(0);
+		-o-transform: translateZ(0);
+		transform: translateZ(0);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		-webkit-text-size-adjust: none;
+		-moz-text-size-adjust: none;
+		-ms-text-size-adjust: none;
+		-o-text-size-adjust: none;
+		text-size-adjust: none;
+	}
+
+	#scroller ul {
+		list-style: none;
+		width: 100%;
+		padding: 0;
+		margin: 0;
+	}
+
+	#scroller li {
+		width: 120px;
+		height: 160px;
+		float: left;
+		line-height: 160px;
+		border-right: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		background-color: #fafafa;
+		font-size: 14px;
+		overflow: hidden;
+		text-align: center;
+	}
+
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

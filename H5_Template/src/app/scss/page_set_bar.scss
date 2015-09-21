@@ -1,0 +1,168 @@
+
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+	.set-bar{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 800px;
+		right:100px;
+		text-align: center;
+
+		.set-bar-list{
+			li{
+				width: 120px;
+				height: 228px;
+				float: left;
+				margin-right: 18px;
+				margin-top: 10px;
+				list-style: none;
+				text-align: center;
+				a{
+					width: 116px;
+					height: 182px;
+					display: block;
+					border: 2px solid white;
+					cursor: pointer;
+					position: relative;
+					overflow: hidden;
+				}
+				a.select{
+					border: 2px solid #0dd4ff;
+					border-radius: 2px;
+					span{
+						background: url("../../libs/images/edit-page-icon.png") no-repeat -110px -50px;
+						background-size: 600px 600px;
+						display: inline-block;
+						width: 24px;
+						height: 24px;
+						position: absolute;
+						left: 0;
+						bottom: 0;
+					}
+				}
+				img{
+					width: 116px;
+					height: 182px;
+				}
+
+				p{
+					color: #a7a7a7;
+					font-size: 12px;
+					height: 32px;
+					line-height: 32px;
+					text-align: center;
+				}
+			}
+		}
+
+		.classify_list{
+			li{
+				border:2px dashed #fff;
+			}
+			li.dragging{
+				border:2px dashed #2E73D6;
+			}
+		}
+
+		.edit_box{
+			.edit_module{
+				padding: 20px 0;
+
+			}
+		}
+
+		.edit_module_head{
+			text-align: right;
+		}
+
+		.edit_module_more{
+			padding: 30px 0 0 0;
+			h6{
+				text-align: left;
+				font-size: 30px;
+			}
+		}
+
+		.edit-select-color{
+			position: relative;
+			width: 100%;
+			padding: 15px ;
+			box-sizing: border-box;
+		}
+
+		.edit-color-box{
+			width: 28px;
+			height: 28px;
+			border-radius: 2px;
+			border: 2px solid transparent;
+			display: inline-block;
+			position: relative;
+			float: left;
+			margin: 0 4px 7px 0;
+			cursor: pointer;
+
+			.edit-color-item {
+				position: absolute;
+				top: 2px;
+				left: 2px;
+				right: 2px;
+				bottom: 2px;
+				box-shadow: -1px 1px 3px #aaa inset;
+			}
+		}
+
+		.edit_module_font{
+			li{
+				float: left;
+				margin: 0 20px 0 0;
+				height: 60px;
+				line-height: 60px;
+				a{
+					color: #000;
+					font-weight: bold;
+					text-decoration: none;
+					&.fz-18{font-size: 18px;}
+					&.fz-24{font-size: 24px;}
+					&.fz-28{font-size: 28px;}
+					&.fz-32{font-size: 32px;}
+					&.fz-36{font-size: 36px;}
+					&.fz-48{font-size: 48px;}
+					&.fz-52{font-size: 52px;}
+					&:hover{
+						color: #ff6600;
+					}
+				}
+
+			}
+		}
+
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

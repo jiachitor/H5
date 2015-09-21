@@ -1,0 +1,85 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+#iSlider {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
+.content {
+	padding: 10%;
+	height: 100%;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+}
+
+.content h1 {
+	margin: 2em 0;
+}
+
+.content h2 {
+	margin: 2em 0;
+}
+
+.content p {
+	margin: 1em 0;
+}
+
+.page1 {
+	background-color: #ff6600;
+	color: #FFF;
+}
+
+.page2 {
+	background-color: #90FFB7;
+}
+
+.page3 {
+	background-color: #90ABFF;
+	color: #FFF;
+}
+
+.page4 {
+	background-color: #FCFF90;
+}
+
+.page5 {
+	background-color: #E390FF;
+	color: #FFF;
+}
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

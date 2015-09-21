@@ -1,0 +1,88 @@
+.login{
+  width: 100%;
+  height: 100%;
+  background:#23B0F5 ;
+  position: relative;
+  text-align: center;
+  padding-top: 1em;
+  .login-box{
+    width:90% ;
+    margin: 0 auto;
+    height: auto;
+    background: #fff;
+  }
+  h1{
+    font-size:3.0rem ;
+    color: #333;
+    padding: 20px 0 0px 0;
+    font-weight: bold;
+  }
+  .login-from{
+    padding: 0% 15% 0 15%;
+    p{
+      padding: 20px 0 20px 0;
+      color: #ccc;
+      font-size: 1.4rem;
+    }
+  }
+  .login-from-menu{
+    width: 100%;
+    margin: 5px 0 5px 0;
+  }
+  .login-from-submit{
+    margin-top: 20px;
+  }
+}
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+  .login{
+    .login-box{
+      width:50% ;
+      height: 60%;
+    }
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+  .login{
+    .login-box{
+      width:500px ;
+      height: 400px;
+    }
+    h1{
+      font-size:4.2rem ;
+      padding: 20px 0 10px 0;
+    }
+    h3{
+      font-size:2.0rem ;
+    }
+    .login-from-top{
+      padding: 2% 0 0 0;
+    }
+  }
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

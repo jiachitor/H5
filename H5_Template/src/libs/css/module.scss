@@ -1,0 +1,219 @@
+/*=====================================1、基本样式==============================================*/
+//字号及单位
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem; /* =16px */
+  font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+  font-size: 1.6rem; /* =16px */
+}
+
+//浮动
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.cf {
+  @include clearfix;
+}
+
+.fl {
+  float: left;
+}
+
+.fr {
+  float: right;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+//显示
+.block {
+  display: block !important;
+}
+
+.inline {
+  display: inline !important;
+}
+
+.inline-block {
+  display: inline-block !important;
+}
+
+.hide {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+//文本
+.text-top {
+  vertical-align: top !important;
+}
+
+.text-middle {
+  vertical-align: middle !important;
+}
+
+.text-bottom {
+  vertical-align: bottom !important;
+}
+
+//单行文字截断
+.text-truncate {
+  word-wrap: normal; /* for IE */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+//多行文字截断,默认3
+@mixin line-clamp($lines:3, $line-height: 1.3em) {
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $lines; // number of lines to show
+  overflow: hidden;
+  line-height: $line-height;
+  max-height: $line-height * $lines;
+}
+
+//水平滚动
+.scrollable-horizontal {
+  width: 100%;
+  overflow-y: hidden;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  -webkit-overflow-scrolling: touch;
+}
+
+//垂直滚动
+.scrollable-vertical {
+  height: 300px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  resize: vertical;
+}
+
+//垂直对齐
+.vertical-align {
+  font-size: 0.001px;
+}
+
+.vertical-align:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.vertical-align-middle,
+.vertical-align-bottom {
+  display: inline-block;
+  max-width: 100%;
+}
+
+//垂直居中对齐
+.vertical-align-middle {
+  vertical-align: middle;
+}
+
+//底部对齐
+.vertical-align-bottom {
+  vertical-align: bottom;
+}
+
+//图片替换
+.text-ir {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+/*=====================================2、css3 动画样式==============================================*/
+//渐变背景1 , 从上到下
+.gradient-color-1 {
+  background: -webkit-linear-gradient(#F9F9F9, #DADADA); /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#F9F9F9, #DADADA); /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#F9F9F9, #DADADA); /* Firefox 3.6 - 15 */
+  background: linear-gradient(#F9F9F9, #DADADA); /* 标准的语法 */
+}
+
+
+
+/*=====================================3、H5 活动页面公共样式==============================================*/
+
+$screen-min-height: 560px;
+$screen-mid-height: 660px;
+$screen-min-width:  1000px;
+
+html,body{
+  height:100%;
+  width:100%;
+  padding:0;
+}
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  font-size: 12px;
+  @media screen and (min-height: $screen-min-height){
+    font-size: 14px;
+  }
+  ul,li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  &.with-banner{
+    .banner{
+      display: block;
+    }
+  }
+  &.without-banner{
+    .banner{
+      display: none;
+    }
+    .judge_one_wrapper.question-wrapper .question{bottom: 5%}
+    .judge_one_wrapper.question-wrapper .question .ques{margin-bottom:6%}
+    .judge_one_wrapper.question-wrapper .series{top: 18%}
+    .judge_one_wrapper.last-wrapper .share-icon{bottom: 4%}
+    .judge_one_wrapper.last-wrapper p.share-text{bottom: 13%}
+    .judge_one_wrapper.last-wrapper button{bottom: 23%}
+    .judge_one_wrapper.last-wrapper p.result-text{bottom:35%}
+    .judge_one_wrapper.last-wrapper ul{bottom:53%}
+    .judge_one_wrapper.last-wrapper p.rank-text{bottom: 57%}
+    .judge_one_wrapper.last-wrapper p.gameover{bottom: 62%}
+  }
+}
+
+.inTopstory{
+  #share-icon-email{
+    display: none;
+  }
+}
+
+#iSlider {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}

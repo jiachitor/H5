@@ -1,0 +1,11 @@
+node_modules/
+int/src/test/
+build
+build_int
+build_int_ir
+dzone_console_int/
+dzone_console_cn/
+backup
+dzone-console-1.0dev.tar.gz
+dzone-console-1.0dev/
+logs/

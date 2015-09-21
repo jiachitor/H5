@@ -1,0 +1,67 @@
+
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+	.tpl_create{
+		width: 100%;
+		height: 100%;
+		position: relative;
+
+		.page-bar{
+			z-index: 2;
+		}
+		.global-bar{
+			z-index: 2;
+		}
+		.view-box{
+			z-index: 2;
+		}
+
+		.yy-left{
+			position: absolute;
+			top: 0;
+			left: 64px;
+			bottom: 0;
+			width: 26px;
+			background: url("../../libs/images/yy-left.png") repeat-y scroll #fff 0 0;
+			z-index: 1;
+		}
+
+		.yy-right{
+			position: absolute;
+			top: 0;
+			right: 56px;
+			bottom: 0;
+			width: 26px;
+			background: url("../../libs/images/yy-right.png") repeat-y scroll #fff 0 0;
+			z-index: 1;
+		}
+
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

@@ -1,0 +1,55 @@
+.classify_list{
+   ul{
+
+   }
+  li{
+    list-style: none;
+    padding: 15px 0 15px 0;
+    margin: 10px 0 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+  }
+  .dragging {
+    //background: #005188;
+  }
+  li.placeholder {background: rgb(255,240,120);}
+  li.placeholder:before {
+    content: "Drop here";
+    color: rgb(225,210,90);
+  }
+
+  pre { clear:both; display: block; padding: 20px 0;}
+
+
+}
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+
+
+
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}

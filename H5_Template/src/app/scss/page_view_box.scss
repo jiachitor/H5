@@ -1,0 +1,85 @@
+
+
+/*页面样式  ---响应,移动优先
+---------------------------------------------------------------------------------*/
+
+/* 超小屏幕（手机，小于 768px） */
+@media (max-width: 767px) {
+
+}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+	.view-box{
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 74px;
+		width: 700px;
+		text-align: center;
+
+		.phone{
+			width: 371px;
+			height: 675px;
+			background: url("../../libs/images/edit-page-phone.png") no-repeat;
+			background-size: 371px 675px;
+			position: relative;
+		}
+
+		.edit-page-phone {
+			width: 320px;
+			height: 536px;
+			position: absolute;
+			top: 8.74%;
+			left: 50%;
+			margin-left: -159px;
+			background-color: #0f0e14;
+		}
+
+		.edit-page-preview {
+			height: 38px;
+			width: 38px;
+			border-radius: 38px;
+			position: absolute;
+			left: 50%;
+			margin-left: -19px;
+			bottom: 32px;
+			background: url("../../libs/images/edit-page-icon.png") no-repeat #0dd4ff -175px 0 ;
+			background-size: 600px 600px;
+			-webkit-box-shadow: 1px 1px rgba(6,0,1,.16);
+			-moz-box-shadow: 1px 1px rgba(6,0,1,.16);
+			box-shadow: 1px 1px rgba(6,0,1,.16);
+			cursor: pointer;
+		}
+
+		.editing{
+			border: 1px dashed transparent;
+			cursor: pointer;
+			&:hover{
+				border: 1px dashed white;
+				background-color: rgba(0,0,0,0.2);
+			}
+		}
+
+
+
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width: 1200px) {
+
+}
